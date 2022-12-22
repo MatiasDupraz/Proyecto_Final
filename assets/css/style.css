@@ -30,7 +30,7 @@ main{
 footer{
     display: grid;
     grid-column: 1/5;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 12% 58% 30%;
     background-color: #000000;
     color: #FFFFFF;
     padding-right: 15px;
@@ -43,6 +43,7 @@ footer > .ico{
     grid-template-columns: 1fr;
     gap: 5px;
     grid-template-rows: repeat(3,1fr);
+    margin-left: 10px;
     
 }
 
@@ -53,6 +54,43 @@ footer > .info{
 h1,h2, h3, p{
     font-family: 'Montserrat Regular', sans-serif;
     
+}
+
+.main--2{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 300;
+    grid-template-areas: 
+    "filtro productosf productosf productosf" ;
+    gap: 10px;
+}
+.main--2 > .filtro{
+    padding-left: 10px;
+    display:block;
+    grid-area: filtro;
+    background-color: #ffffff;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+}
+.productos--filtro{
+    grid-area: productosf;
+    background-color: #ffffff;
+    color:#000000;
+    font-family: 'Poppins', sans-serif;
+}
+.productos--filtro > .producto--img-f{
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.productos--filtro > .producto--img-f:hover{
+    background-color: #F50B0B;
+    padding-bottom: 3px;
 }
 #head{
 display: flex;
@@ -135,6 +173,7 @@ display: flex;
     font-weight: 500;
     list-style: none;
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -170,11 +209,7 @@ display: flex;
     height: auto;
     max-width: 300px;
 }
-@media only screen and (max-width: 850px) {
-    .logo_nombre{
-        width: 250px
-    }
-}
+
 .logo_nombre:hover{
     transform:scale(1.05);
     transition: 0.5s;
@@ -267,15 +302,33 @@ svg {
 
 }
 
-
 @media only screen and (max-width:1050px) {
-    header .informacion{
+    
+    .informacion{
         display: block;
+        font-size: smaller;
+    }
+    .separador > em, .link{
+        font-size: smaller;
     }
     header form{
         display: none;
     }
 }
+
+@media only screen and (max-width: 850px) {
+    .logo_nombre{
+        width: 250px
+    }
+    .separador > em, .link{
+        font-size: 12px;
+    }
+    .informacion{
+        font-size: smaller;
+    }
+}
+
+
 
 .producto--img:hover{
     background-color: #F50B0B;
