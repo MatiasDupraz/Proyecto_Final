@@ -5,7 +5,10 @@
     padding: 0;
 }
 
-.container{
+a:link{
+    text-decoration: none;
+}
+.container1{
     display: grid;
     grid-template-columns: repeat(5fr);
 
@@ -20,7 +23,7 @@ header{
     background-color: #000000;
     color: #FFFFFF;
     position: sticky;
-    z-index: 1;
+    z-index: 10;
     top: -5px; 
 }
 main{
@@ -70,8 +73,8 @@ h1,h2, h3, p{
     padding-left: 10px;
     display:block;
     grid-area: filtro;
-    background-color: #ffffff;
-    color:#000000;
+    background-color: #000000;
+    color:#ffffff;
     font-family: 'Poppins', sans-serif;
 }
 .productos--filtro{
@@ -87,10 +90,28 @@ h1,h2, h3, p{
     height: auto;
     aspect-ratio: 1 / 1;
 }
+.card{
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    color:#000000;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: #18171a;
+    padding-bottom: 3px;
+    color:#ffffff;
+    text-decoration: none;
+}
 
 .productos--filtro > .producto--img-f:hover{
     background-color: #F50B0B;
     padding-bottom: 3px;
+    
+    
 }
 #head{
 display: flex;
@@ -176,24 +197,6 @@ display: flex;
     text-decoration: none;
 }
 
-
-
-
-#banner{
-    justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    
-}
-.banner--img{
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-
 .link:hover{
     color: #F50B0B;
 }
@@ -241,7 +244,7 @@ form {
     width: 450px;
     height: 44px;
     border-radius: 5px;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     margin-top: auto;
@@ -273,11 +276,13 @@ form button {
 svg {
     color: #222222;
     fill: currentColor;
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     padding: 10px;
 }
-
+svg:hover{
+    color: #b10a0a;
+}
 .separador{
     display: block;
     
@@ -301,33 +306,6 @@ svg {
     align-content: center;
 
 }
-
-@media only screen and (max-width:1050px) {
-    
-    .informacion{
-        display: block;
-        font-size: smaller;
-    }
-    .separador > em, .link{
-        font-size: smaller;
-    }
-    header form{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .logo_nombre{
-        width: 250px
-    }
-    .separador > em, .link{
-        font-size: 12px;
-    }
-    .informacion{
-        font-size: smaller;
-    }
-}
-
 
 
 .producto--img:hover{
@@ -360,8 +338,115 @@ svg {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #444444;
+    background-color: #14151a;
     box-shadow: 0px 2px 5px #000000;
 }
 
+
+a i{
+        text-decoration: none;
+    }
+
+@media only screen and (max-width: 576px) {
+    .logo_nombre{
+        width: 200px
+    }
+    .separador > em, .link{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 10px;
+        display: block;
+    }
+    .card-body{
+        height: 90px;
+    }
+    .informacion{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .logo_nombre{
+        width: 220px
+    }
+    .separador > em, .link{
+        font-size: 15px;
+    }
+    .card-text{
+        font-size: 13px;
+        display: block;
+    }
+    .card-body{
+        height: 90px;
+    }
+    .informacion{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo_nombre{
+        width: 240px
+    }
+    .separador > em, .link{
+        font-size: 13px;
+    }
+    .card-text{
+        font-size: 14px;
+        display: block;
+    }
+    .card-body{
+        height: 95px;
+    }
+    .informacion{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .logo_nombre{
+        width: 260px
+    }
+    .informacion{
+        display: block;
+        font-size: 15px;
+        
+    }
+    .separador > em, .link{
+        font-size: 13px;
+    }
+    .card-text{
+        font-size: 17px;
+        display: block;
+    }
+    .card-body{
+        height: 95px;
+    }
+    header form{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo_nombre{
+        width: 300px
+    }
+    .informacion{
+        display: block;
+        font-size: 18px;
+        
+    }
+    .separador > em, .link{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 17px;
+        display: block;
+    }
+    .card-body{
+        height: 95px;
+    }
+}
 
