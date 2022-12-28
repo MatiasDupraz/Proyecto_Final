@@ -349,26 +349,30 @@ a i{
 
 @media only screen and (max-width: 576px) {
     .logo_nombre{
-        width: 200px
+        width: 200px;
     }
     .separador > em, .link{
         font-size: 12px;
+    }
+    .card-img-top{
+        height: 80px;
     }
     .card-text{
         font-size: 10px;
         display: block;
     }
     .card-body{
-        height: 90px;
+        height: 80px;
     }
     .informacion{
         font-size: 12px;
     }
+    
 }
 
 @media only screen and (min-width: 576px) {
     .logo_nombre{
-        width: 220px
+        width: 220px;
     }
     .separador > em, .link{
         font-size: 15px;
@@ -383,14 +387,18 @@ a i{
     .informacion{
         font-size: 14px;
     }
+    .card-img-top{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .logo_nombre{
-        width: 240px
+        width: 240px;
     }
     .separador > em, .link{
-        font-size: 13px;
+        font-size: 16px;
     }
     .card-text{
         font-size: 14px;
@@ -402,23 +410,27 @@ a i{
     .informacion{
         font-size: 15px;
     }
+    .card-img-top{
+        width: 150px;
+        height: auto;
+    }
 
 }
 
 @media only screen and (min-width: 992px) {
     .logo_nombre{
-        width: 260px
+        width: 260px;
     }
     .informacion{
         display: block;
-        font-size: 15px;
+        font-size: 16px;
         
     }
     .separador > em, .link{
-        font-size: 13px;
+        font-size: 17px;
     }
     .card-text{
-        font-size: 17px;
+        font-size: 16px;
         display: block;
     }
     .card-body{
@@ -427,11 +439,15 @@ a i{
     header form{
         display: flex;
     }
+    .card-img-top{
+        width: 200px;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .logo_nombre{
-        width: 300px
+        width: 300px;
     }
     .informacion{
         display: block;
@@ -439,7 +455,7 @@ a i{
         
     }
     .separador > em, .link{
-        font-size: 16px;
+        font-size: 18px;
     }
     .card-text{
         font-size: 17px;
@@ -447,6 +463,10 @@ a i{
     }
     .card-body{
         height: 95px;
+    }
+    .card-img-top{
+        width: 300px;
+        height: auto;
     }
 }
 
