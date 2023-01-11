@@ -3,86 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MYDIS INFORMÁTICA</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <!--Línea de código para vincular archivo css-->
-    <link rel="shortcut icon" href="assets/img/logos/favicon.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sono&family=Ubuntu:wght@300;400;500&display=swap');
-    </style>
+    <link rel="stylesheet" href="../assets/css/style.css"> <!--Línea de código para vincular archivo css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../assets/img/logos/favicon.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymus"></script>
+    <script>
+        function cambioProductos(element) {
+            document.getElementByClass("producto--centro--img").innerHTML = document.getElementById(element).innerHTML;
+        }
+    </script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <!--En el header (encabezado) van los elementos como nombre de la página, logo, etc-->
-        <div>
-            <a href="index.html"><img src="assets/img/logos/LOGOFICIAL.png" width="300" alt="Logo Mydis Informática" class="imagen"></a>
-            <input type="input" placeholder="Buscar">
-            <div id="datos__header">
-                <h3 class="informacion">Correo: mydis_ventas@gmail.com</h3>
-                <h3 class="informacion">Teléfono: 353-4526321</h3>
-                <h3 class="informacion">Instagram: @mydis_informatica</h3>
-            </div>
-        </div>
-
-
-        <nav id="MenuHorizontal">
-            <ul>
-                <a class="link" href="pcArmadas.html"><li>Pc de Escritorio</li></a>
-                <a class="link" href="notebooks.html"><li>Notebooks</li></a>
-                <a class="link" href="armaTuPc.html"><li>Armá Tu Pc</li></a>
-                <a class="link" href="ofertas.html"><li>Ofertas</li></a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="MenuHorizontal--bannercat">
-            <div id="MenuVertical">
-                <nav> <!--Menú categorías-->
-                    <details close>
-                        <summary class="categoria"><h3>Categorías</h3></summary>
-                        <ul>
-                            <details close>
-                                <summary class="categoria">Pc Armadas</summary>
-                                    <ul>
-                                        <a class="link" href="pcArmadasIntel.html"><li>Intel</li></a>
-                                        <a class="link" href="pcArmadasAmd.html"><li>AMD</li></a>
-                                    </ul>
-                            </details>
-                            
-                            
-                            <a class="link" href="notebooks.html"><li>Notebooks</li></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <div class="container1">
+        <header class="animate__animated animate__fadeInDown">
+            <!--En el header (encabezado) van los elementos como nombre de la página, logo, etc-->
+            <div id="head"> <!--Contenedor -->
+                <a href="../index.html"><img src="../assets/img/logos/LOGOFICIAL.png" width="300" alt="Logo Mydis Informática" class="logo_nombre"></a>
                 
-                            <a class="link" href="impresoras.html"><li>Impresoras</li></a>
-                            
-                            <details close>
-                                <summary class="categoria">Perifericos</summary>
-                                    <a class="link" href="mouses.html"><li>Mouses</li></a>
-                                    <a class="link" href="auriculares.html"><li>Auriculares</li></a>
-                                    <a class="link" href="teclados.html"><li>Teclados</li></a>  
-                            </details>
-                        </ul>
+                <div id="user__header">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i href="#" class="fa-solid fa-circle-user"></i>
+                    <i href="#" class="fa-solid fa-phone"></i>
+                    <i href="#" class="fa-brands fa-whatsapp"></i>
+                </div>
+                
+            </div>
+            
+            <div id="menuBusqueda">
+                <nav> <!--Menú categorías-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Categorías</button>
+                        <div class="dropdown-content">
+                            <li><a class="link" href="pcArmadas.html">Pc Armadas</a></li>    
+                            <li><a class="link" href="notebooks.html" >Notebooks</a></li>    
+                            <li><a class="link" href="impresoras.html">Impresoras</a></li>
+                            <li><a class="link" href="mouses.html">Mouses</a></li>
+                            <li><a class="link" href="auriculares.html">Auriculares</a></li>
+                            <li><a class="link" href="teclados.html">Teclados</a></li>
+                            <li><a class="link" href="audio.html">Audio</a></li>
+                            <li><a class="link" href="pantallas.html">Pantallas</a></li>
+                        </div>
+                        </div>
+                </nav>
+
+                <form id="form">
+                    <input type="search" id="query" name="q" placeholder="Buscar..." aria-label="Buscar contenido del sitio">
+                    <button>
+                        <svg viewBox="0 0 1024 1024">
+                            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+                
+                <nav id="MenuHorizontal">
+                    <ul>
+                        <li><a class="link" href="pcArmadas.html">Pc de Escritorio</a></li>
+                        <li><a class="link" href="notebooks.html">Notebooks</a></li>
+                        <li><a class="link" href="armaTuPc.html">Armá Tu Pc</a></li>
+                        <li><a class="link" href="ofertas.html">Ofertas</a></li>
+                    </ul>
                 </nav>
             </div>
-            <div class="producto--ind">
-                <a href="notebooks.html"><img src="assets/img/productos/notebooks/apple.jpg" alt="imagen producto" class="producto--img--ind" width="800px" height="800px"></a>
 
+        </header>
+    <main>
+        <div class="contenedor--productos">
+            <div class="leftside">
+                <div class="img-item">
+                    <a href="#" data-id="1">
+                        <img src="../assets/img/productos/notebooks/dell-inspiron-3511-15/1.png">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="2">
+                        <img src="../assets/img/productos/notebooks/dell-inspiron-3511-15/2.png">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="3">
+                        <img src="../assets/img/productos/notebooks/dell-inspiron-3511-15/3.png">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="4">
+                        <img src="../assets/img/productos/notebooks/dell-inspiron-3511-15/4.png">
+                    </a>
+                </div>
             </div>
-            <aside class="producto--data">
-                <h1>Apple Macbook Air M1</h1>
-                <h1>$203.895</h1>
-                <h2>Envíos a todo el país</h2>
-                <button class="Comprar">Comprar</button>
-            </aside>
-            
+
+            <div class="producto--centro">
+                <div class = "card1-wrapper">
+                    <div class = "card1">
+                    <!-- card left -->
+                        <div class = "product-imgs">
+                            <div class = "img-display">
+                                <div class = "img-showcase">
+                                    <img src = "../assets/img/productos/notebooks/dell-inspiron-3511-15/1.png">
+                                    <img src = "../assets/img/productos/notebooks/dell-inspiron-3511-15/2.png">
+                                    <img src = "../assets/img/productos/notebooks/dell-inspiron-3511-15/3.png">
+                                    <img src = "../assets/img/productos/notebooks/dell-inspiron-3511-15/4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <h1>Notebook Banghó Gamer</h1>
+                <h2>$340.000</h2>
+                <hr>
+                <h3>Medios de pago</h3>
+                <div id="mediosPago">
+                    <img src="../assets/img/medios/boton1.png">
+                    <img src="../assets/img/medios/boton2.png">
+                    <img src="../assets/img/medios/boton3.png">
+                    <img src="../assets/img/medios/boton4.png">
+                    <img src="../assets/img/medios/boton5.png">
+                </div>
+                <hr>
+                <h3>Envíos</h3>
+                Hacemos envíos a todo el país mediante
+                <div id="mediosEnvio">
+                    <img src="../assets/img/medios/envio1.png">
+                    <img src="../assets/img/medios/envio2.png">
+                </div>
+                <hr>
+                <div id="botonesCompra">
+                    <button class="btn btn-primary">Comprar</button>
+                    <button class="btn btn-primary">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                
+            </div>
+            <div class="producto--informacion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio suscipit, fuga voluptas sunt nostrum qui nemo minima incidunt vero unde corporis dignissimos mollitia accusantium velit deleniti quo quidem voluptatibus eveniet quos maxime consectetur sequi? Odit modi eligendi corrupti unde adipisci dicta enim soluta odio cupiditate facilis dolorem cumque perspiciatis delectus iusto magnam dolores architecto praesentium, voluptatum obcaecati officiis sint! Corrupti quos molestias provident blanditiis soluta voluptates. Nobis cumque in voluptate id at deleniti quia distinctio nostrum, ullam corporis aspernatur!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus aspernatur quod cupiditate unde esse iste quas tenetur quisquam facere reiciendis neque suscipit commodi repellendus rerum placeat, vero, culpa ab.
+            </div>
+        </div>
     </main>
     <footer>
-        <div>
+        <div class="ico">
             <br>
-            <h3 class="informacion">Correo: mydis_ventas@gmail.com</h3>
-            <h3 class="informacion">Teléfono: 353-4526321</h3>
-            <h3 class="informacion">Instagram: @mydis_informatica</h3>
+            <a class="link" href="sobreNosotros.html"></a><i class="fa-solid fa-circle-info"> Sobre Nosotros</i></a>
+            <a class="link" href="https://wa.me/154144699"></a><i class="fa-solid fa-headset"> Asesoramiento</i></a>
+            <a class="link" href="https://goo.gl/maps/sozeogSsMyVNoc847"></a><i class="fa-solid fa-map-location-dot"> Encontranos</i></a>
             <br>
         </div>
+        <div class="info">
+            <p class="informacion">Correo: mydis_ventas@gmail.com</h>
+            <p class="informacion">Teléfono: 353-4526321</p>
+            <p class="informacion">Instagram: @mydis_informatica</p>
+        </div>
     </footer>
+</div>
+
+<script src="../script.js"></script>
 </body>
 </html>
