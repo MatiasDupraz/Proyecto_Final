@@ -93,7 +93,7 @@ h1,h2, h3, p{
 }
 .card{
     border: 2px solid #FFFFFF;
-    border-radius: 10px;
+    border-radius: 5px;
     width: auto;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -305,23 +305,6 @@ svg:hover{
     font-size:larger !important;
     padding: 10px;
     align-content: center;
-
-}
-
-
-.producto--img:hover{
-    background-color: #F50B0B;
-    padding-bottom: 3px;
-}
-
-.producto--img{
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    aspect-ratio: 1 / 1;
 }
 
 .producto--data{
@@ -358,8 +341,9 @@ a i{
             height: 80px;
         }
         .card-text{
-            font-size: 10px;
+            font-size: 11px;
             display: block;
+            font-weight: bolder;
         }
         .card-body{
             height: 80px;
@@ -821,6 +805,7 @@ a i{
             overflow: hidden;
         }
         .img-showcase{
+            padding-bottom: 420px;
             display: flex;
             transition: all 0.5s ease;
         
@@ -872,6 +857,7 @@ a i{
         .card-text{
             font-size: 17px;
             display: block;
+            font-weight: bold;
         }
         .card-body{
             height: 95px;
@@ -963,6 +949,7 @@ a i{
             overflow: hidden;
         }
         .img-showcase{
+            padding-bottom: 0px;
             display: flex;
             transition: all 0.5s ease;
         
