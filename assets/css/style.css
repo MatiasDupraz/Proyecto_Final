@@ -62,7 +62,7 @@ h1,h2, h3, p{
 
 .main--2{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 73%;
     background-color: #000000;
     color: #FFFFFF;
     font-weight: 300;
@@ -80,17 +80,13 @@ h1,h2, h3, p{
 }
 .productos--filtro{
     grid-area: productosf;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     background-color: #ffffff;
     color:#000000;
     font-family: 'Poppins', sans-serif;
 }
-.productos--filtro > .producto--img-f{
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    aspect-ratio: 1 / 1;
-}
+
 .card{
     border: 2px solid #FFFFFF;
     border-radius: 5px;
@@ -103,7 +99,7 @@ h1,h2, h3, p{
 
 .card:hover{
     background-color: #18171a;
-    padding-bottom: 3px;
+
     color:#ffffff;
     text-decoration: none;
 }
@@ -294,17 +290,16 @@ svg:hover{
 }
 
 .productos{
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 0 auto;
-    grid-auto-rows: 1fr;
-    column-gap: 10px;
+    column-gap: 5px;
     background-color: #000000;
     font-weight: 500;
     font-size:larger !important;
     padding: 10px;
-    align-content: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 .producto--data{
@@ -315,6 +310,13 @@ svg:hover{
 }
 .producto--data h2{
     font-size:x-large;
+}
+
+#blackcarousel > #carouselExampleCaptions > .carousel-inner{
+    background-color: #000000;
+    }
+#blackcarousel > #carouselExampleCaptions > .carousel-inner img{
+    opacity: 40%;
 }
 
 #menuBusqueda{
@@ -338,7 +340,7 @@ a i{
             font-size: 12px;
         }
         .card-img-top{
-            height: 80px;
+            height: 100px;
         }
         .card-text{
             font-size: 11px;
@@ -346,7 +348,7 @@ a i{
             font-weight: bolder;
         }
         .card-body{
-            height: 80px;
+            height: 100px;
         }
         .informacion{
             font-size: 12px;
@@ -484,7 +486,7 @@ a i{
             display: block;
         }
         .card-body{
-            height: 90px;
+            height: 100px;
         }
         .informacion{
             font-size: 14px;
