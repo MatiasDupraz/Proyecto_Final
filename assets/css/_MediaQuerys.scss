@@ -1,0 +1,660 @@
+@use "_Commons" as com;
+
+@media only screen and (max-width: 576px) {
+    .logo_nombre{
+        width: 200px;
+    }
+    .separador > em, .link{
+        font-size: map-get(com.$TamanosFuente,"Pequena");
+    }
+    .card-img-top{
+        height: 100px;
+    }
+    .card-text{
+        font-size: (map-get(com.$TamanosFuente,"Pequena")-1px);
+        display: block;
+        font-weight: bolder;
+    }
+    .card-body{
+        height: 100px;
+    }
+    .informacion{
+        font-size: map-get(com.$TamanosFuente,"Pequena");
+    }
+    
+
+    /*Menú de Producto*/
+    .contenedor--productos{
+        display: grid;
+        margin: 20px;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: com.$Sombra-Caja;
+        background-color: (map-get(com.$Colores,"Blanco"));
+        color: (map-get(com.$Colores,"Blanco"));
+        font-weight: 300;
+        grid-template-areas: 
+        "producto--centro"
+        "leftside"
+        "rightside"
+        "producto--informacion"
+        ;
+    }
+    
+    .leftside{
+        display: flex;
+        flex-direction: row;
+        grid-area: leftside;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .leftside img{
+        display: flex;
+        max-width: 100px;
+        height: auto;
+        width: auto;
+        padding: 10px;  
+    }
+    .leftside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    
+    .producto--centro{
+        grid-area: producto--centro;
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        overflow: hidden;
+    }
+    .rightside{
+        grid-area: rightside;
+        color: (map-get(com.$Colores,"Negro"));
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #mediosPago img, #mediosEnvio img{
+        border-radius: 10px 0px 10px 0px;
+        height: 25px;
+        width: 65px;
+    }
+    .rightside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    .producto--informacion{
+        grid-area: producto--informacion;
+        border-top: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding: 5px;
+        color: (map-get(com.$Colores,"Negro"));
+    }
+    /*Modificación para página producto*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    
+    .card1-wrapper{
+        width: 100px;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-display{
+        margin-left: 245vw;
+        overflow: hidden;
+    }
+    .img-showcase{
+        display: flex;
+        transition: all 0.5s ease;
+    
+    }
+    .img-showcase img{
+        width: 80vw;
+        padding: 25px;
+    }
+    .img-select{
+        display: flex;
+    }
+    .img-item{
+        margin: 0.3rem;
+    }
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3){
+        margin-right: 0;
+    }
+    .img-item:hover{
+        opacity: 0.8;
+    }
+    .product-content{
+        padding: 2rem 1rem;
+    }
+    
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .logo_nombre{
+        width: 220px;
+    }
+    .separador > em, .link{
+        font-size: map-get(com.$TamanosFuente,"Mediana");
+    }
+    .card-text{
+        font-size: (map-get(com.$TamanosFuente,"Pequena")+1px);
+        display: block;
+    }
+    .card-body{
+        height: 100px;
+    }
+    .informacion{
+        font-size: (map-get(com.$TamanosFuente,"Pequena")-1px)
+    }
+    .card-img-top{
+        width: 100px;
+        height: 100px;
+    }
+    /*Menú de Producto*/
+    .contenedor--productos{
+        display: grid;
+        margin: 20px;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: com.$Sombra-Caja;
+        background-color: (map-get(com.$Colores,"Blanco"));
+        color: (map-get(com.$Colores,"Blanco"));
+        font-weight: 300;
+        grid-template-areas: 
+        "producto--centro"
+        "leftside"
+        "rightside"
+        "producto--informacion"
+        ;
+    }
+    
+    .leftside{
+        display: flex;
+        flex-direction: row;
+        grid-area: leftside;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .leftside img{
+        display: flex;
+        max-width: 100px;
+        height: auto;
+        width: auto;
+        padding: 10px;  
+    }
+    .leftside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    
+    .producto--centro{
+        grid-area: producto--centro;
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        overflow: hidden;
+    }
+    .rightside{
+        grid-area: rightside;
+        color: (map-get(com.$Colores,"Negro"));
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #mediosPago img, #mediosEnvio img{
+        border-radius: 10px 0px 10px 0px;
+        height: 25px;
+        width: 65px;
+    }
+    .rightside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    .producto--informacion{
+        grid-area: producto--informacion;
+        border-top: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding: 5px;
+        color: (map-get(com.$Colores,"Negro"));
+    }
+    /*Modificación para página producto*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    
+    .card1-wrapper{
+        width: 100px;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-display{
+        margin-left: 245vw;
+        overflow: hidden;
+    }
+    .img-showcase{
+        display: flex;
+        transition: all 0.5s ease;
+    
+    }
+    .img-showcase img{
+        width: 80vw; /*80vw*/
+        /*max-width: 70vh;*/
+        padding: 25px;
+    }
+    .img-select{
+        display: flex;
+    }
+    .img-item{
+        margin: 0.3rem;
+    }
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3){
+        margin-right: 0;
+    }
+    .img-item:hover{
+        opacity: 0.8;
+    }
+    .product-content{
+        padding: 2rem 1rem;
+    }
+    
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .logo_nombre{
+        width: 240px;
+    }
+    .separador > em, .link{
+        font-size: (map-get(com.$TamanosFuente,"Mediana")+1px)
+    }
+    .card-text{
+        font-size: 14px;
+        display: block;
+    }
+    .card-body{
+        height: 95px;
+    }
+    .informacion{
+        font-size: map-get(com.$TamanosFuente,"Mediana");
+    }
+    .card-img-top{
+        width: 150px;
+        height: auto;
+    }
+
+    /*Modificación para página producto*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    
+    .card1-wrapper{
+        width: 100px;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-display{
+        margin-left: 200vw;
+        overflow: hidden;
+    }
+    .img-showcase{
+        display: flex;
+        transition: all 0.5s ease;
+    
+    }
+    .img-showcase img{
+        width: 63vw; /*80vw*/
+        /*max-width: 70vh;*/
+        padding: 10vw;
+    }
+    .img-select{
+        display: flex;
+    }
+    .img-item{
+        margin: 0.3rem;
+    }
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3){
+        margin-right: 0;
+    }
+    .img-item:hover{
+        opacity: 0.8;
+    }
+    .product-content{
+        padding: 2rem 1rem;
+    }
+    
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+    
+
+}
+
+@media only screen and (min-width: 992px) {
+    .logo_nombre{
+        width: 260px;
+    }
+    .informacion{
+        display: block;
+        font-size: (map-get(com.$TamanosFuente,"Mediana")+1px);
+        
+    }
+    .separador > em, .link{
+        font-size: (map-get(com.$TamanosFuente,"Pequena")-1px);
+    }
+    .card-text{
+        font-size: (map-get(com.$TamanosFuente,"Mediana")+1px);
+        display: block;
+    }
+    .card-body{
+        height: 95px;
+    }
+    header form{
+        display: flex;
+        width: 35vw;
+    }
+    .card-img-top{
+        width: 200px;
+        height: auto;
+    }
+     /*Menú Productos*/
+     .contenedor--productos{
+        display: grid;
+        margin: 20px;
+        margin-left: 100px;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: com.$Sombra-Caja;
+        grid-template-columns:7% 58% 34%;
+        background-color: (map-get(com.$Colores,"Blanco"));
+        color: (map-get(com.$Colores,"Blanco"));
+        font-weight: 300;
+        grid-template-areas: 
+        "leftside producto--centro rightside"
+        ". producto--informacion rightside"
+        ;
+    }
+    
+    .leftside{
+        grid-area: leftside;
+        flex-direction: column;
+        padding-top: 30px;
+        justify-content: flex-start;
+    }
+    .leftside img{
+        display: flex;
+        max-width: 100px;
+        height: 6vw;
+        width: auto;
+        padding: 10px;  
+    }
+    .leftside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    
+    .producto--centro{
+        grid-area: producto--centro;
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        overflow: hidden;
+    }
+    .rightside{
+        grid-area: rightside;
+        color: (map-get(com.$Colores,"Negro"));
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #mediosPago img, #mediosEnvio img{
+        border-radius: 10px 0px 10px 0px;
+        height: 30px;
+        width: 90px;
+    }
+    .rightside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    .producto--informacion{
+        grid-area: producto--informacion;
+        border-top: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding: 5px;
+        color: (map-get(com.$Colores,"Negro"));
+    }
+    /*Modificación para página producto*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    
+    .card1-wrapper{
+        width: 800px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-display{
+        margin-left: 140vw;
+        overflow: hidden;
+    }
+    .img-showcase{
+        padding-bottom: 420px;
+        display: flex;
+        transition: all 0.5s ease;
+    
+    }
+    .img-showcase img{
+        width: 55vw;
+        padding: 10vw;
+    }
+    .img-select{
+        display: flex;
+    }
+    .img-item{
+        margin: 0.3rem;
+    }
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3){
+        margin-right: 0;
+    }
+    .img-item:hover{
+        opacity: 0.8;
+    }
+    .product-content{
+        padding: 2rem 1rem;
+    }
+    
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo_nombre{
+        width: 300px;
+    }
+    .informacion{
+        display: block;
+        font-size: map-get(com.$TamanosFuente,"Grande");
+        
+    }
+    .separador > em, .link{
+        font-size: map-get(com.$TamanosFuente,"Grande");
+    }
+    .card-text{
+        font-size: (map-get(com.$TamanosFuente,"Grande")-1px);
+        display: block;
+        font-weight: bold;
+    }
+    .card-body{
+        height: 95px;
+    }
+    .card-img-top{
+        width: 300px;
+        height: auto;
+    }
+    /*Menú Productos*/
+    .contenedor--productos{
+        display: grid;
+        margin: 20px;
+        margin-left: 100px;
+        border: 2px solid;
+        border-radius: 10px;
+        box-shadow: com.$Sombra-Caja;
+        grid-template-columns:7% 58% 34%;
+        background-color: (map-get(com.$Colores,"Blanco"));
+        color: (map-get(com.$Colores,"Blanco"));
+        font-weight: 300;
+        grid-template-areas: 
+        "leftside producto--centro rightside"
+        ". producto--informacion rightside"
+        ;
+    }
+    
+    .leftside{
+        grid-area: leftside;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 60px;
+        
+    }
+    .leftside img{
+        display: flex;
+        max-width: 100px;
+        height: 6vw;
+        width: auto;
+        padding: 10px;  
+    }
+    .leftside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    
+    .producto--centro{
+        grid-area: producto--centro;
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        overflow: hidden;
+    }
+    .rightside{
+        grid-area: rightside;
+        color: (map-get(com.$Colores,"Negro"));
+        border-left: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #mediosPago img, #mediosEnvio img{
+        border-radius: 10px 0px 10px 0px;
+        height: 30px;
+        width: 90px;
+    }
+    .rightside img:hover{
+        box-shadow: com.$Sombra-Caja;
+    }
+    .producto--informacion{
+        grid-area: producto--informacion;
+        border-top: 0.5px solid (map-get(com.$Colores,"Bordes"));
+        padding: 5px;
+        color: (map-get(com.$Colores,"Negro"));
+    }
+    /*Modificación para página producto*/
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    
+    .card1-wrapper{
+        width: 800px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-display{
+        margin-left: 150vw;
+        overflow: hidden;
+    }
+    .img-showcase{
+        padding-bottom: 0px;
+        display: flex;
+        transition: all 0.5s ease;
+    
+    }
+    .img-showcase img{
+        width: 50vw;
+        padding: 50px;
+    }
+    .img-select{
+        display: flex;
+    }
+    .img-item{
+        margin: 0.3rem;
+    }
+    .img-item:nth-child(1),
+    .img-item:nth-child(2),
+    .img-item:nth-child(3){
+        margin-right: 0;
+    }
+    .img-item:hover{
+        opacity: 0.8;
+    }
+    .product-content{
+        padding: 2rem 1rem;
+    }
+    
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+
+
+
+}

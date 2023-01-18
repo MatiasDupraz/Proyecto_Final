@@ -1,0 +1,61 @@
+@use "_Commons" as com;
+
+
+a:link{
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: (map-get(com.$Colores,"NegroTransparente"));
+
+    color:(map-get(com.$Colores,"Blanco"));
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.productos--filtro > .producto--img-f:hover{
+    background-color: (map-get(com.$Colores,"Rojo"));
+    padding-bottom: 3px;
+    
+    
+}
+
+    
+.dropdown-content a:hover {
+    background-color: #ddd;
+    transform:scale(1.2);
+    transition: 0.3s;
+}
+    
+.dropdown:hover .dropdown-content {display: block;}
+    
+.dropdown:hover .dropbtn {
+    background-color: (map-get(com.$Colores,"RojoSombra"));
+}
+
+
+
+.link:hover{
+    color: (map-get(com.$Colores,"Rojo"));
+}
+
+
+.logo_nombre:hover{
+    transform:scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+::placeholder {
+    color: (map-get(com.$Colores,"Blanco"));
+    opacity: 0.7; 
+}
+
+
+svg:hover{
+    filter: drop-shadow(1px 2px 2px (map-get(com.$Colores,"Rojo")));
+    transition: 0.5s;
+}
+
+

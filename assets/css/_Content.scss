@@ -1,0 +1,298 @@
+@use "_Commons" as com;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(5fr);
+
+}
+
+h1,h2, h3, p{
+    font-family: map-get(com.$Fuentes,"Informacion");
+    
+}
+
+body{
+    background: linear-gradient(black 0%, white 25%);
+    
+}
+header{
+    display: grid;
+    grid-column: 1/5;
+    background-color: (map-get(com.$Colores,"NegroTransparente"));
+    backdrop-filter: blur(8px);
+    color: (map-get(com.$Colores,"Blanco"));
+    position: sticky;
+    z-index: 10;
+    top: -5px; 
+}
+main{
+    display: grid;
+    grid-column: 1/5;
+}
+footer{
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: 12% 58% 30%;
+    background-color: (map-get(com.$Colores,"Negro"));
+    color: (map-get(com.$Colores,"Blanco"));
+    padding-right: 15px;
+    font-weight: 300;
+    grid-template-areas: "iconos none info";
+}
+footer{ 
+    .ico{
+        grid-area: iconos;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        grid-template-rows: repeat(3,1fr);
+        margin-left: 10px;
+    }
+}
+
+footer { 
+    .info{
+        grid-area: info;
+        margin-top: 20px;
+    }
+}
+
+.main--2{
+    display: grid;
+    grid-template-columns: 25% 73%;
+    background-color: (map-get(com.$Colores,"Negro"));
+    color: (map-get(com.$Colores,"Blanco"));
+    font-weight: 300;
+    grid-template-areas: 
+    "filtro productosf productosf productosf" ;
+    gap: 10px;
+}
+.main--2{ 
+    .filtro{
+        padding-left: 10px;
+        display:block;
+        grid-area: filtro;
+        background-color: (map-get(com.$Colores,"Negro"));
+        color:(map-get(com.$Colores,"Blanco"));
+        font-family: map-get(com.$Fuentes,"Poppins");
+    }
+}
+
+.productos--filtro{
+    grid-area: productosf;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: (map-get(com.$Colores,"Blanco"));
+    color:(map-get(com.$Colores,"Negro"));
+    font-family: map-get(com.$Fuentes,"Poppins");
+}
+
+.card{
+    border: 2px solid (map-get(com.$Colores,"Blanco"));
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    color:(map-get(com.$Colores,"Negro"));
+    text-decoration: none;
+}
+
+#head{
+    display: flex;
+    
+    }
+    
+    #head input{
+        margin-left: auto;
+        resize: horizontal;
+        width: 200px;
+        height: 30px;
+    }
+    #user__header{
+        color: (map-get(com.$Colores,"Blanco"));
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    #user__header > i, #MenuHorizontal > ul > i, footer > div > i{
+        font-size: 1.2em;
+        text-transform: uppercase; 
+    }
+    #user__header > i:hover, #MenuHorizontal > ul > i:hover, footer > div > i:hover{
+        color: (map-get(com.$Colores,"Rojo"));
+        border-bottom:1px solid (map-get(com.$Colores,"Rojo"));
+        
+    }
+    .dropbtn {
+        background-color: (map-get(com.$Colores,"RojoClaroBotones"));
+        color: (map-get(com.$Colores,"Blanco"));
+        padding: 16px;
+        font-size: (map-get(com.$TamanosFuente,"Grande")-2px);
+        font-weight: 500;
+        border: none;
+        font-family: map-get(com.$Fuentes,"Poppins");
+    }
+        
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+        
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1c4;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px map-get(com.$Colores,"Sombras");
+        z-index: 1;
+    }
+        
+    .dropdown-content a {
+        color: black;
+        padding: (map-get(com.$TamanosFuente,"Pequena")) (map-get(com.$TamanosFuente,"Pequena") + 4px);
+        text-decoration: none;
+        display: block;
+    }
+
+    .link, .separador{
+        font-family: map-get(com.$Fuentes,"Poppins");
+        color: (map-get(com.$Colores,"Blanco"));
+        font-weight: 500;
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .informacion{
+        font-family: map-get(com.$Fuentes,"Informacion");
+        text-align: right;
+    
+    }
+    .logo_nombre{
+        display: flex;
+        justify-content: flex-start;
+        width: auto;
+        height: auto;
+        max-width: 300px;
+    }
+
+    #MenuHorizontal{
+        margin-right: 20px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    #MenuHorizontal >ul >li{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-right: 10px;
+        
+    }
+    
+    form {
+        background-color: (map-get(com.$Colores,"Blanco"));
+        width: 450px;
+        height: 44px;
+        border-radius: 5px;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    
+    }
+    
+    form input {
+        all: unset;
+        font: 16px system-ui;
+        color: (map-get(com.$Colores,"GrisOscuro"));
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+    }
+
+    form button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+    }
+    
+    svg {
+        color: (map-get(com.$Colores,"GrisOscuro"));
+        fill: currentColor;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+    }
+
+    .separador{
+    display: block;
+    
+    background-color: (map-get(com.$Colores,"Negro"));
+    font-weight: 500;
+    font-size:larger !important;
+    justify-content: center;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    column-gap: 5px;
+    background-color: (map-get(com.$Colores,"Negro"));
+    font-weight: 500;
+    font-size:larger !important;
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.producto--data{
+    margin-left: 500px;
+}
+.producto--data h1{
+    font-size:xx-large;
+}
+.producto--data h2{
+    font-size:x-large;
+}
+
+#blackcarousel > #carouselExampleCaptions > .carousel-inner{
+    background-color: (map-get(com.$Colores,"Negro"));
+    }
+#blackcarousel > #carouselExampleCaptions > .carousel-inner img{
+    opacity: 40%;
+}
+
+#menuBusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 4px 5px (map-get(com.$Colores,"Negro"));
+}
+
+
+a i{
+        text-decoration: none;
+    }

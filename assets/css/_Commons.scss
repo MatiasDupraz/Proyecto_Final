@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sono&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$Colores:(
+    RojoClaroBotones: #ff3939,
+    Rojo:#F50B0B,
+    GrisOscuro: #222222,
+    Negro: #000000,
+    Sombras: rgba(0,0,0,0.2),
+    Bordes: rgba(53, 53, 53, 0.2),
+    Blanco: #FFFFFF,
+    RojoSombra: #b10a0a,
+    NegroTransparente: rgba(0, 0, 0, 0.733),
+);
+
+$Sombra-Caja: 2px 2px 2px 2px (map-get($Colores,"Sombras"));
+
+$TamanosFuente:(
+    Pequena: 12px,
+    Mediana: 15px,
+    Grande: 18px,
+);
+
+$Fuentes:(
+    Informacion: ('Montserrat Regular', sans-serif),
+)
