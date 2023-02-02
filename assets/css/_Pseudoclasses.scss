@@ -6,10 +6,9 @@ a:link{
 }
 
 .card:hover{
-    background-color: (map-get(com.$Colores,"NegroTransparente"));
-
+    background: -webkit-linear-gradient(45deg, map-get(com.$Colores,"Negro"), map-get(com.$Colores,"Rojo"));
+    transform: translateY(-7px);
     color:(map-get(com.$Colores,"Blanco"));
-    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -36,9 +35,12 @@ a:link{
 
 
 .link:hover{
+    color: (map-get(com.$Colores,"Blanco"));
+    filter: drop-shadow(com.$Brillo-Texto);
+}
+.link-cat:hover{
     color: (map-get(com.$Colores,"Rojo"));
 }
-
 
 .logo_nombre:hover{
     transform:scale(1.05);
@@ -54,8 +56,34 @@ a:link{
 
 
 svg:hover{
+    color: map-get(com.$Colores,"Blanco");
     filter: drop-shadow(1px 2px 2px (map-get(com.$Colores,"Rojo")));
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
+#user__header > i:hover{
+    color: (map-get(com.$Colores,"Blanco"));
+    filter: drop-shadow(com.$Brillo-Texto);
+}
 
+.card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  
+  .cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: (map-get(com.$Colores,"RojoSombra"));
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: (map-get(com.$Colores,"Perla"));
+  }

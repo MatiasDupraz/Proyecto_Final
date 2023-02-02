@@ -34,10 +34,11 @@ main{
     display: grid;
     grid-column: 1/5;
 }
+
 footer{
     display: grid;
     grid-column: 1/5;
-    grid-template-columns: 12% 58% 30%;
+    grid-template-columns: 12% 53% 35%;
     background-color: (map-get(com.$Colores,"Negro"));
     color: (map-get(com.$Colores,"Blanco"));
     padding-right: 15px;
@@ -46,32 +47,26 @@ footer{
 }
 footer{ 
     .ico{
+        padding-top: 40px;
         grid-area: iconos;
         display: grid;
         grid-template-columns: 1fr;
         gap: 5px;
         grid-template-rows: repeat(3,1fr);
-        margin-left: 10px;
+        margin-right: auto;
+        margin-left: 15px;
     }
 }
 
 footer { 
     .info{
+        padding-top: 20px;
         grid-area: info;
         margin-top: 20px;
+        padding-right: 2px;
     }
 }
 
-.main--2{
-    display: grid;
-    grid-template-columns: 25% 73%;
-    background-color: (map-get(com.$Colores,"Negro"));
-    color: (map-get(com.$Colores,"Blanco"));
-    font-weight: 300;
-    grid-template-areas: 
-    "filtro productosf productosf productosf" ;
-    gap: 10px;
-}
 .main--2{ 
     .filtro{
         padding-left: 10px;
@@ -79,28 +74,21 @@ footer {
         grid-area: filtro;
         background-color: (map-get(com.$Colores,"Negro"));
         color:(map-get(com.$Colores,"Blanco"));
-        font-family: map-get(com.$Fuentes,"Poppins");
+        font-family: map-get(com.$Fuentes,"Titulos");
     }
 }
 
-.productos--filtro{
-    grid-area: productosf;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    background-color: (map-get(com.$Colores,"Blanco"));
-    color:(map-get(com.$Colores,"Negro"));
-    font-family: map-get(com.$Fuentes,"Poppins");
-}
+
 
 .card{
     border: 2px solid (map-get(com.$Colores,"Blanco"));
     border-radius: 5px;
     width: auto;
     height: auto;
-    aspect-ratio: 1 / 1;
     color:(map-get(com.$Colores,"Negro"));
     text-decoration: none;
 }
+
 
 #head{
     display: flex;
@@ -119,21 +107,22 @@ footer {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: 25px;
         margin-bottom: 20px;
         gap: 10px;
+
+        i{
+            height: 20px;
+        }
     }
-    #user__header > i, #MenuHorizontal > ul > i, footer > div > i{
+    #user__header > i{
         font-size: 1.2em;
-        text-transform: uppercase; 
+        text-transform: uppercase;
+        color: (map-get(com.$Colores,"GrisClaro"));
     }
-    #user__header > i:hover, #MenuHorizontal > ul > i:hover, footer > div > i:hover{
-        color: (map-get(com.$Colores,"Rojo"));
-        border-bottom:1px solid (map-get(com.$Colores,"Rojo"));
-        
-    }
+    
     .dropbtn {
         background-color: (map-get(com.$Colores,"RojoClaroBotones"));
         color: (map-get(com.$Colores,"Blanco"));
@@ -141,7 +130,8 @@ footer {
         font-size: (map-get(com.$TamanosFuente,"Grande")-2px);
         font-weight: 500;
         border: none;
-        font-family: map-get(com.$Fuentes,"Poppins");
+        font-family: map-get(com.$Fuentes,"Titulos");
+        letter-spacing: 2px;
     }
         
     .dropdown {
@@ -156,24 +146,39 @@ footer {
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px map-get(com.$Colores,"Sombras");
         z-index: 1;
+        li{
+            list-style-type: none;
+        }
     }
         
     .dropdown-content a {
         color: black;
-        padding: (map-get(com.$TamanosFuente,"Pequena")) (map-get(com.$TamanosFuente,"Pequena") + 4px);
+        padding: (map-get(com.$TamanosFuente,"Pequena")) (map-get(com.$TamanosFuente,"Pequena") + 14px);
         text-decoration: none;
         display: block;
+        font-family: map-get(com.$Fuentes,"Titulos");
+        color: (map-get(com.$Colores,"GrisOscuro"));
+        font-weight: 500;
     }
 
-    .link, .separador{
-        font-family: map-get(com.$Fuentes,"Poppins");
+    .separador{
+        @include com.Titulos; 
         color: (map-get(com.$Colores,"Blanco"));
         font-weight: 500;
         list-style: none;
         text-align: center;
         text-decoration: none;
+        display: block;
+        background-color: (map-get(com.$Colores,"Negro"));
+        font-size:larger !important;
+        
     }
-
+    .link{
+        @extend .separador;
+        letter-spacing: 0,5px;
+        color: (map-get(com.$Colores,"GrisClaro"));
+        background-color: rgba(255, 255, 255, 0);
+    }
     .informacion{
         font-family: map-get(com.$Fuentes,"Informacion");
         text-align: right;
@@ -184,6 +189,7 @@ footer {
         justify-content: flex-start;
         width: auto;
         height: auto;
+        margin: 20px 0px 20px 0px;
         max-width: 300px;
     }
 
@@ -205,7 +211,7 @@ footer {
         align-items: flex-end;
         align-content: flex-end;
         margin-right: 10px;
-        
+        letter-spacing: 2px;
     }
     
     form {
@@ -245,27 +251,6 @@ footer {
         padding: 10px;
     }
 
-    .separador{
-    display: block;
-    
-    background-color: (map-get(com.$Colores,"Negro"));
-    font-weight: 500;
-    font-size:larger !important;
-    justify-content: center;
-}
-
-.productos{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 auto;
-    column-gap: 5px;
-    background-color: (map-get(com.$Colores,"Negro"));
-    font-weight: 500;
-    font-size:larger !important;
-    padding: 10px;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-}
 
 .producto--data{
     margin-left: 500px;
@@ -296,3 +281,52 @@ footer {
 a i{
         text-decoration: none;
     }
+
+
+body {
+  background: linear-gradient(map-get(com.$Colores,"Negro") 0%, map-get(com.$Colores,"RojoClaro") 10%, map-get(com.$Colores,"Blanco") 40%);
+}
+
+
+.container2 {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+    max-width: 400px;
+  }
+
+  .card > a:link{
+    color: (map-get(com.$Colores,"Negro"));
+  }
+
+  .card:hover > a:link{
+    color: (map-get(com.$Colores,"Blanco"));
+  }
+
+  .card > a > .btn{
+        z-index: 3; 
+        position: absolute;
+        transform: translate(-125%, 600%);
+
+}
+
+#titulo-pub{
+    font-family: map-get(com.$Fuentes,"Titulos");
+}

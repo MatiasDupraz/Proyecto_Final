@@ -6,117 +6,317 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MYDIS INFORMÁTICA</title>
     <link rel="stylesheet" href="../assets/css/style.css"> <!--Línea de código para vincular archivo css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/img/logos/favicon.png">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymus"></script>
 
-    <meta name="ofertas" content="promociones, semanal, promo, black-friday, ofertas, oferta">
+    <meta name="notebooks" content="notebooks, laptop, netbooks, netbook, portátil">
 </head>
 <body>
-    <div class="container">
-        <header class="animate__animated animate__fadeInDown">
-            <!--En el header (encabezado) van los elementos como nombre de la página, logo, etc-->
-            <div id="head"> <!--Contenedor -->
-                <a href="../index.html"><img src="../assets/img/logos/LOGOFICIAL.png" width="300" alt="Logo Mydis Informática" class="logo_nombre"></a>
-                
-                <div id="user__header">
-                    <i href="#" class="fas fa-heart"></i>
-                    <i href="#" class="fa-solid fa-circle-user"></i>
-                    <i href="#" class="fa-solid fa-phone"></i>
-                    <i href="#" class="fa-sharp fa-solid fa-envelope"></i>
-                    <i href="#" class="fa-brands fa-whatsapp"></i>
-                    <i href="#" class="fa-brands fa-instagram"></i>
-                </div>
-                
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <div class="container1">
+      <header class="animate__animated animate__fadeInDown">
+        <!--En el header (encabezado) van los elementos como nombre de la página, logo, etc-->
+        <div id="head"> <!--Contenedor -->
+            <a href="../index.html"><img src="../assets/img/logos/LOGOFICIAL.png" width="300" alt="Logo Mydis Informática" class="logo_nombre"></a>
+            
+            <div id="user__header">
+              <i href="#" class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-user"></i>
             </div>
-            <div id="menuBusqueda">
-                <nav> <!--Menú categorías-->
-                    <div class="dropdown">
-                        <button class="dropbtn">Categorías</button>
-                        <div class="dropdown-content">
-                            <li><a class="link" href="notebooks.html">Pc Armadas</a></li>    
-                            <li><a class="link" href="notebooks.html">Notebooks</a></li>    
-                            <li><a class="link" href="impresoras.html">Impresoras</a></li>
-                            <li><a class="link" href="mouses.html">Mouses</a></li>
-                            <li><a class="link" href="auriculares.html">Auriculares</a></li>
-                            <li><a class="link" href="teclados.html">Teclados</a></li>
-                            <li><a class="link" href="audio.html">Audio</a></li>
-                            <li><a class="link" href="pantallas.html">Pantallas</a></li>
-                        </div>
-                        </div>
-                </nav>
+            
+        </div>
+        <div id="menuBusqueda">
+            <nav> <!--Menú categorías-->
+                <div class="dropdown">
+                    <button class="dropbtn">CATEGORIAS</button>
+                    <div class="dropdown-content">
+                        <li><a class="link-cat" href="pcArmadas.html">Pc Armadas</a></li>    
+                        <li><a class="link-cat" href="notebooks.html">Notebooks</a></li>    
+                        <li><a class="link-cat" href="celulares.html">Celulares</a></li>
+                        <li><a class="link-cat" href="impresoras.html">Impresoras</a></li>
+                        <li><a class="link-cat" href="mouses.html">Mouses</a></li>
+                        <li><a class="link-cat" href="auriculares.html">Auriculares</a></li>
+                        <li><a class="link-cat" href="teclados.html">Teclados</a></li>
+                        <li><a class="link-cat" href="audio.html">Audio</a></li>
+                        <li><a class="link-cat" href="pantallas.html">Pantallas</a></li>
+                    </div>
+                    </div>
+            </nav>
 
-                <form id="form">
-                    <input type="search" id="query" name="q" placeholder="Buscar..." aria-label="Buscar contenido del sitio">
-                    <button>
-                        <svg viewBox="0 0 1024 1024">
-                            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
-                            </path>
-                        </svg>
-                    </button>
-                </form>
+            <form id="form">
+                <input type="search" id="query" name="q" placeholder="Buscar..." aria-label="Buscar contenido del sitio">
+                <button>
+                    <svg viewBox="0 0 1024 1024">
+                        <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                        </path>
+                    </svg>
+                </button>
+            </form>
 
-                <nav id="MenuHorizontal">
-                    <ul>
-                        <li><a class="link" href="pcArmadas.html">Pc de Escritorio</a></li>
-                        <li><a class="link" href="notebooks.html">Notebooks</a></li>
-                        <li><a class="link" href="armaTuPc.html">Armá Tu Pc</a></li>
-                        <li><a class="link" href="ofertas.html">Ofertas</a></li>
-                        <a class="link" href="../index.html"><i class="fa-solid fa-house"></i></a>
+            <nav id="MenuHorizontal">
+              <ul>
+                  <li><a class="link" href="pcArmadas.html">PC DE ESCRITORIO</a></li>
+                  <li><a class="link" href="notebooks.html">NOTEBOOKS</a></li>
+                  <li><a class="link" href="celulares.html">CELULARES</a></li>
+                  <li><a class="link" href="ofertas.html">OFERTAS</a></li>
+              </ul>
+          </nav>
+        </div>
 
-
-                    </ul>
-                </nav>
-            </div>
-
-        </header>
-        
+    </header>
         <main>
-                
-                <div id="banner">
-                    <a href="notebooks.html"><img src="../assets/img/banners/Banner04.png" alt="Banner Publicitario" class="banner--img"></a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/banners/Banner04.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="../assets/img/banners/Banner05.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="../assets/img/banners/Banner06.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+                <div class="separador">
+                    <em>OFERTAS NOTEBOOKS</em>
                 </div>
-            <div class="separador">OFERTAS</div>
-            <br>
-            <div class="productos">
-                <a href="producto.html"><img src="../assets/img/productos/zeus.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px">
-                </a>
-                <a href="producto.html"><img src="../assets/img/productos/sandisk.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/corsair.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/3080.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/tplink.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/minipc.webp" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
+                <div class="container2">
+                  <ul class="cards">
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/apple.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Apple MacBook Pro 16 M1</h3>
+                          <p class="card-text">$2095000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/asus.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook ASUS E510ka Celeron</h3>
+                          <p class="card-text">$92000</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/bangho.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó L5 i5</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/dell.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Dell Inspiron i5 8va Gen</h3>
+                          <p class="card-text">$89500</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/gamer_b.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó Gamer i5 Rtx 1660 4Gb</h3>
+                          <p class="card-text">$375000</p>
+                        </div>
+                    </a>
+                    </li>
+                    
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/hp.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Hp 245 G8 Ryzen 3</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="separador">
+                    <em>OFERTAS SEMANALES</em>
+                </div>
+                <div class="container2">
+                  <ul class="cards">
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/apple.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Apple MacBook Pro 16 M1</h3>
+                          <p class="card-text">$2095000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/asus.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook ASUS E510ka Celeron</h3>
+                          <p class="card-text">$92000</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/bangho.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó L5 i5</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/dell.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Dell Inspiron i5 8va Gen</h3>
+                          <p class="card-text">$89500</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/gamer_b.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó Gamer i5 Rtx 1660 4Gb</h3>
+                          <p class="card-text">$375000</p>
+                        </div>
+                    </a>
+                    </li>
+                    
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/hp.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Hp 245 G8 Ryzen 3</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
 
-            </div>
-            <br>
-            <div class="separador">NOVEDADES</div>
-            <br>
-            <div class="productos">
-                <a href="producto.html"><img src="../assets/img/productos/zeus.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/sandisk.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/corsair.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/3080.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/tplink.jpg" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-                <a href="producto.html"><img src="../assets/img/productos/minipc.webp" alt="imagen producto" class="producto--img" width="300px" height="300px"></a>
-
-            </div>
+                <div class="separador">
+                    <em>VUELTA A CLASES!</em>
+                </div>
+                <div class="container2">
+                  <ul class="cards">
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/apple.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Apple MacBook Pro 16 M1</h3>
+                          <p class="card-text">$2095000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/asus.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook ASUS E510ka Celeron</h3>
+                          <p class="card-text">$92000</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html">
+                        <img src="../assets/img/productos/notebooks/bangho.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó L5 i5</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/dell.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Dell Inspiron i5 8va Gen</h3>
+                          <p class="card-text">$89500</p>
+                      </div>
+                    </a>
+                    </li>
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/gamer_b.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Banghó Gamer i5 Rtx 1660 4Gb</h3>
+                          <p class="card-text">$375000</p>
+                        </div>
+                    </a>
+                    </li>
+                    
+                    <li class="card">
+                      <a href="../pages/productos/producto.html"><div class="card">
+                        <img src="../assets/img/productos/notebooks/hp.webp" class="card-img-top" alt="Imagen producto">
+                        <hr>
+                        <div class="card-body">
+                          <h3 class="card-text">Notebook Hp 245 G8 Ryzen 3</h3>
+                          <p class="card-text">$115000</p>
+                        </div>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
         </main>
+        <!-- Footer -->
         <footer>
-            <div class="ico">
-                <br>
-                <i class="fa-solid fa-circle-info"> Sobre Nosotros</i>
-                <i class="fa-solid fa-headset"><a class="link" href="https://www.google.com/search?q=mydis&oq=mydis&aqs=chrome..69i57j69i59j69i60l2j69i61j69i60.2263j0j4&sourceid=chrome&ie=UTF-8#"> Asesoramiento</a></i>
-                <i class="fa-solid fa-map-location-dot"><a class="link" href="https://goo.gl/maps/sozeogSsMyVNoc847"> Encontranos</a></i>
-                <br>
-            </div>
-            <div class="info">
-                <p class="informacion">Correo: mydis_ventas@gmail.com</h>
-                <p class="informacion">Teléfono: 353-4526321</p>
-                <p class="informacion">Instagram: @mydis_informatica</p>
-            </div>
-        </footer>
-    </container>
+          <div class="ico">
+              <a class="link" href="pages/sobreNosotros.html"><i class="fa-solid fa-circle-info"></i> Sobre Nosotros</a>
+              <a class="link" href="https://wa.me/154175020"><i class="fa-solid fa-headset"></i> Asesoramiento</a>
+              <a class="link" href="https://goo.gl/maps/sozeogSsMyVNoc847"><i class="fa-solid fa-map-location-dot"></i> Encontranos</a>
+              <br>
+          </div>
+          <div class="info">
+              <p class="informacion">Correo: mydis_ventas@gmail.com</h>
+              <p class="informacion">Teléfono: 353-4526321</p>
+              <p class="informacion">Instagram: @mydis_informatica</p>
+          </div>
+      </footer>
+    </div>
 </body>
 </html>
