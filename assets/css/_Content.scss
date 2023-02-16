@@ -36,15 +36,13 @@ main{
 }
 
 footer{
-    display: grid;
-    grid-column: 1/5;
-    grid-template-columns: 12% 53% 35%;
     background-color: (map-get(com.$Colores,"Negro"));
     color: (map-get(com.$Colores,"Blanco"));
     padding-right: 15px;
     font-weight: 300;
-    grid-template-areas: "iconos none info";
+
 }
+
 footer{ 
     .ico{
         padding-top: 40px;

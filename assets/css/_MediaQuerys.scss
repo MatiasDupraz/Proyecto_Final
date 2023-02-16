@@ -1,6 +1,18 @@
 @use "_Commons" as com;
 
 @media only screen and (max-width: 576px) {
+    footer > .info{
+        display: none;
+    }
+    footer{
+        display: flex;
+
+    }
+    footer > .ico{
+        width: 90vw;
+        justify-content: center;
+        margin-right: 15px;
+    }
     .container2{
         max-width: 400px;
     }
@@ -173,6 +185,22 @@
 @media only screen and (min-width: 576px) {
     .container2{
         max-width: 600px;
+    }
+    footer{
+        
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: 12% 53% 35%;
+    grid-template-areas: "iconos none info";
+    }
+
+    footer { 
+        .info{
+            padding-top: 20px;
+            grid-area: info;
+            margin-top: 20px;
+            padding-right: 2px;
+        }
     }
 
     .main--2{

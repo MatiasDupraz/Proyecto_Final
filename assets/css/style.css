@@ -3,6 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @media only screen and (max-width: 576px) {
+  footer > .info {
+    display: none;
+  }
+  footer {
+    display: flex;
+  }
+  footer > .ico {
+    width: 90vw;
+    justify-content: center;
+    margin-right: 15px;
+  }
   .container2 {
     max-width: 400px;
   }
@@ -139,8 +150,8 @@
     margin: 0.3rem;
   }
   .img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+  .img-item:nth-child(2),
+  .img-item:nth-child(3) {
     margin-right: 0;
   }
   .img-item:hover {
@@ -161,6 +172,18 @@
 @media only screen and (min-width: 576px) {
   .container2 {
     max-width: 600px;
+  }
+  footer {
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: 12% 53% 35%;
+    grid-template-areas: "iconos none info";
+  }
+  footer .info {
+    padding-top: 20px;
+    grid-area: info;
+    margin-top: 20px;
+    padding-right: 2px;
   }
   .main--2 {
     display: grid;
@@ -291,8 +314,8 @@
     margin: 0.3rem;
   }
   .img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+  .img-item:nth-child(2),
+  .img-item:nth-child(3) {
     margin-right: 0;
   }
   .img-item:hover {
@@ -377,8 +400,8 @@
     margin: 0.3rem;
   }
   .img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+  .img-item:nth-child(2),
+  .img-item:nth-child(3) {
     margin-right: 0;
   }
   .img-item:hover {
@@ -508,8 +531,8 @@
     margin: 0.3rem;
   }
   .img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+  .img-item:nth-child(2),
+  .img-item:nth-child(3) {
     margin-right: 0;
   }
   .img-item:hover {
@@ -653,8 +676,8 @@
     margin: 0.3rem;
   }
   .img-item:nth-child(1),
-.img-item:nth-child(2),
-.img-item:nth-child(3) {
+  .img-item:nth-child(2),
+  .img-item:nth-child(3) {
     margin-right: 0;
   }
   .img-item:hover {
@@ -697,7 +720,6 @@ header {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   color: #FFFFFF;
-  position: -webkit-sticky;
   position: sticky;
   z-index: 10;
   top: -5px;
@@ -709,14 +731,10 @@ main {
 }
 
 footer {
-  display: grid;
-  grid-column: 1/5;
-  grid-template-columns: 12% 53% 35%;
   background-color: #000000;
   color: #FFFFFF;
   padding-right: 15px;
   font-weight: 300;
-  grid-template-areas: "iconos none info";
 }
 
 footer .ico {
@@ -962,8 +980,7 @@ body {
   padding: 25px 0px;
   list-style: none;
   overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 .card {
@@ -1040,11 +1057,6 @@ a:link {
 }
 
 ::-moz-placeholder {
-  color: #FFFFFF;
-  opacity: 0.7;
-}
-
-:-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 0.7;
 }
