@@ -28,10 +28,14 @@ a:link{
     
 .dropdown:hover .dropdown-content {display: block;}
     
-.dropdown:hover .dropbtn {
+.dropdown:hover, .dropbtn:hover, #botonLogueo:hover {
     background-color: (map-get(com.$Colores,"RojoSombra"));
 
 
+}
+#botonRegistro > a:hover{
+    color: map-get((com.$Colores), "Blanco");
+    text-decoration: underline;
 }
 
 
@@ -89,3 +93,10 @@ svg:hover{
   .cards::-webkit-scrollbar-track {
     background: (map-get(com.$Colores,"Perla"));
   }
+
+.logs:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+    color: (map-get(com.$Colores,"Blanco"));
+    filter: drop-shadow(com.$Brillo-Texto);
+}

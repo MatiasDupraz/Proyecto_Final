@@ -6,6 +6,7 @@ $Colores:(
     RojoClaroBotones: #ff3939,
     Rojo:#F50B0B,
     GrisClaro:#c4c4c4,
+    Gris:#666666,
     GrisOscuro: #222222,
     Negro: #000000,
     Sombras: rgba(0,0,0,0.2),
@@ -13,9 +14,12 @@ $Colores:(
     Bordes: rgba(53, 53, 53, 0.2),
     Blanco: #FFFFFF,
     RojoSombra: #b10a0a,
+    RojoOscuro: #6d0808,
     NegroTransparente: rgba(0, 0, 0, 0.733),
+    NegroTransparente2: rgba(0, 0, 0, 0.445),
     RojoClaro: #e9b7b7,
     Perla: #edf2f4,
+    Transparente: rgba(0, 0, 0, 0)
 );
 
 $Sombra-Caja: 2px 2px 2px 2px (map-get($Colores,"Sombras"));

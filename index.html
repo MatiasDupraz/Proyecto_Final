@@ -25,8 +25,8 @@
                 <a href="index.html"><img loading="lazy" src="assets/img/logos/LOGOFICIAL.png" alt="Logo Mydis Informática" class="logo_nombre"></a>
                 
                 <div id="user__header">
-                    <i href="#" class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-regular fa-user"></i>
+                  <a class="link"><i href="#" class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="link" href="pages/login.html"><i class="fa-regular fa-user"></i></a>
                 </div>
                 
             </div>
@@ -104,7 +104,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html">
                     <img loading="lazy" src="assets/img/productos/zeus.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(1)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Auriculares Zeus</h3>
@@ -115,7 +115,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html">
                     <img loading="lazy" src="assets/img/productos/sandisk.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(2)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Pendrive 8Gb Sandisk</h3>
@@ -126,7 +126,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html">
                     <img loading="lazy" src="assets/img/productos/corsair.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(3)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Silla Gamer Corsair</h3>
@@ -137,7 +137,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html">
                     <img loading="lazy" src="assets/img/productos/3080.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(4)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Geforce RTX 3080</h3>
@@ -148,7 +148,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html"><div class="card">
                     <img loading="lazy" src="assets/img/productos/tplink.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(5)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Router Tp-Link</h3>
@@ -159,7 +159,7 @@
                 <li class="card">
                   <a href="pages/productos/producto.html"><div class="card">
                     <img loading="lazy" src="assets/img/productos/minipc.webp" class="card-img-top" alt="Imagen producto">
-                    <button class="btn btn-danger">+ <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn btn-danger" onclick="agregarProducto(6)">+ <i class="fa-solid fa-cart-shopping"></i></button>
                     <hr>
                     <div class="card-body">
                       <h3 class="card-text">Mini Pc Intel i3</h3>
@@ -421,4 +421,5 @@
           </div>
       </footer>
 </body>
+<script src="../js/script.js"></script>
 </html>

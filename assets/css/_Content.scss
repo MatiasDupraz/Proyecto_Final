@@ -11,6 +11,82 @@
 
 }
 
+.contenedor_login{
+    display: grid;
+    grid-template-areas: ". . login login . .";
+    margin: 5%;
+}
+
+#loginBody{
+    background: linear-gradient(map-get(com.$Colores, "Negro") 0%, map-get(com.$Colores, "RojoOscuro") 50%, map-get(com.$Colores, "RojoClaro") 80%);
+}
+
+.login{
+    h1, p{
+        color: map-get(com.$Colores, "Blanco");
+    }
+    hr{
+        align-self: center;
+        background-color: map-get(com.$Colores, "Gris");
+        height: 1px;
+        width: 80%;
+        border: none;
+        margin: 5px;
+    }
+    grid-area: login;
+    background-color: map-get(com.$Colores, "NegroTransparente2");
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form-control{
+    outline: none;
+    width: 60%;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    color: map-get(com.$Colores, "Blanco");
+    border-color: map-get(com.$Colores, "Blanco");
+    padding: 0.9rem 0.9rem 0.9rem ; 
+    border-radius: 10px;
+    border-width: 0.5px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: auto;
+    margin: 10px;
+    
+}
+
+.logs{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    border-color: map-get(com.$Colores, "Blanco");
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    i{
+        color: map-get(com.$Colores, "Blanco");
+        font-size: 30px;
+    }
+}
+#tituloLogin{
+    font-family: map-get(com.$Fuentes,"Titulos");
+    letter-spacing: 2px;
+}
 h1,h2, h3, p{
     font-family: map-get(com.$Fuentes,"Informacion");
     
@@ -62,6 +138,9 @@ footer {
         grid-area: info;
         margin-top: 20px;
         padding-right: 2px;
+        .informacion{
+            padding-top: 10px;
+        }
     }
 }
 
@@ -121,7 +200,7 @@ footer {
         color: (map-get(com.$Colores,"GrisClaro"));
     }
     
-    .dropbtn {
+    .dropbtn, #botonLogueo {
         background-color: (map-get(com.$Colores,"RojoClaroBotones"));
         color: (map-get(com.$Colores,"Blanco"));
         padding: 16px;
@@ -131,7 +210,15 @@ footer {
         font-family: map-get(com.$Fuentes,"Titulos");
         letter-spacing: 2px;
     }
-        
+    
+    #botonLogueo{
+        background-color: map-get(com.$Colores, "Negro");
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
     .dropdown {
         position: relative;
         display: inline-block;
@@ -247,7 +334,6 @@ footer {
         height: 44px;
         padding: 10px;
     }
-
 
 .producto--data{
     margin-left: 500px;

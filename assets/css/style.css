@@ -10,9 +10,8 @@
     display: flex;
   }
   footer > .ico {
-    width: 90vw;
+    width: 92vw;
     justify-content: center;
-    margin-right: 15px;
   }
   .container2 {
     max-width: 400px;
@@ -705,6 +704,84 @@
   grid-template-columns: repeat(5fr);
 }
 
+.contenedor_login {
+  display: grid;
+  grid-template-areas: ". . login login . .";
+  margin: 5%;
+}
+
+#loginBody {
+  background: linear-gradient(#000000 0%, #6d0808 50%, #e9b7b7 80%);
+}
+
+.login {
+  grid-area: login;
+  background-color: rgba(0, 0, 0, 0.445);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.login h1, .login p {
+  color: #FFFFFF;
+}
+.login hr {
+  align-self: center;
+  background-color: #666666;
+  height: 1px;
+  width: 80%;
+  border: none;
+  margin: 5px;
+}
+
+.form-control {
+  outline: none;
+  width: 60%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  padding: 0.9rem 0.9rem 0.9rem;
+  border-radius: 10px;
+  border-width: 0.5px;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: auto;
+  margin: 10px;
+}
+
+.logs {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+.logs i {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+#tituloLogin {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
 h1, h2, h3, p {
   font-family: "Montserrat Regular", sans-serif;
 }
@@ -753,6 +830,9 @@ footer .info {
   grid-area: info;
   margin-top: 20px;
   padding-right: 2px;
+}
+footer .info .informacion {
+  padding-top: 10px;
 }
 
 .main--2 .filtro {
@@ -806,7 +886,7 @@ footer .info {
   color: #c4c4c4;
 }
 
-.dropbtn {
+.dropbtn, #botonLogueo {
   background-color: #ff3939;
   color: #FFFFFF;
   padding: 16px;
@@ -815,6 +895,14 @@ footer .info {
   border: none;
   font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
+}
+
+#botonLogueo {
+  background-color: #000000;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .dropdown {
@@ -1038,8 +1126,13 @@ a:link {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover, .dropbtn:hover, #botonLogueo:hover {
   background-color: #b10a0a;
+}
+
+#botonRegistro > a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .link:hover {
@@ -1096,4 +1189,11 @@ svg:hover {
 
 .cards::-webkit-scrollbar-track {
   background: #edf2f4;
+}
+
+.logs:hover {
+  transform: translateY(-7px);
+  transition: 0.5s;
+  color: #FFFFFF;
+  filter: drop-shadow(2px 2px 2px #FFFFFF);
 }/*# sourceMappingURL=style.css.map */
