@@ -28,12 +28,12 @@ a:link{
     
 .dropdown:hover .dropdown-content {display: block;}
     
-.dropdown:hover, .dropbtn:hover, #botonLogueo:hover {
+.dropdown:hover, .dropbtn:hover, #botonLogueo:hover, #botonRegistro:hover{
     background-color: (map-get(com.$Colores,"RojoSombra"));
 
 
 }
-#botonRegistro > a:hover{
+#irARegistro > a:hover{
     color: map-get((com.$Colores), "Blanco");
     text-decoration: underline;
 }

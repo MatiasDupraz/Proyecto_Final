@@ -11,7 +11,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymus"></script>
-    <meta name="menu de logueo" content="usuario, cuenta, logueo, informatica, productos, servicios, Mydis, mydis, notebooks, celulares, tablets, iphone,phone, mac, leovo, asus">
+    <meta name="menu registro" content="usuario, cuenta, logueo, registro, informatica, productos, servicios, Mydis, mydis, notebooks, celulares, tablets, iphone,phone, mac, leovo, asus">
 </head>
 <body id="loginBody">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -71,7 +71,7 @@
                 
             <div class="contenedor_login">
                 <div class="login">
-                    <h1 id="tituloLogin">INICIAR SESIÓN</h1>
+                    <h1 id="tituloLogin">REGISTRO</h1>
                     <hr>
                     <div class="metodos_logueo">
                         <button class="logs" id="googlelog"><i class="fa-brands fa-google"></i></button>
@@ -79,16 +79,36 @@
                         <button class="logs" id="applelog"><i class="fa-brands fa-apple"></i></button>
                         <button class="logs" id="microsoftlog"><i class="fa-brands fa-microsoft"></i></button>
                     </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="correoInput" placeholder="Ingrese su correo">
+                    <div class="formularioRegistro">
+                        
+                        <div class="form-group" id="correoInputForm">
+                            <input type="email" class="form-control" id="correoInput" placeholder="Correo">
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="contrasenaInput" placeholder="Ingrese su contraseña">
+                        <div class="form-group" id="contrasenaInputForm">
+                            <input type="password" class="form-control" id="contrasenaInput" placeholder="Contraseña">
+                            <input type="password" class="form-control" id="repContrasenaInput" placeholder="Repita su contraseña">
                         </div>
-                        <button id="botonLogueo" type="submit">Iniciar Sesión</button>
+                        
+                        <div class="form-group" id="nombreInputForm">
+                            <input type="text" class="form-control" id="nombreInput" placeholder="Nombre">
+                            <input type="text" class="form-control" id="apellidoInput" placeholder="Apellido">
+                        </div>
+                        <div class="form-group" id="telefonoInputForm">
+                            <input type="text" class="form-control" id="telefonoInput" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group" id="ciudadInputForm">
+                            <input type="text" class="form-control" id="paisInput" placeholder="Pais">
+                            <input type="text" class="form-control" id="ciudadInput" placeholder="Ciudad">
+                        </div>
+                        <div class="form-group" id="direccionInputForm">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Dirección">
+                            <input type="text" class="form-control" id="alturaInput" placeholder="Altura">
+                        </div>
+                        
+                    </div>
+
+                    <button id="botonRegistro" type="submit">Registrarse</button>
                 <p id="error"></p>
-                
-                <p id="irARegistro">¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
                 </div>
             </div>
             

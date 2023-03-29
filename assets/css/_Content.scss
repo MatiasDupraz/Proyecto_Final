@@ -11,6 +11,75 @@
 
 }
 
+.carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-area: carrito;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get(com.$Colores,"Blanco");
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+
+    h1{
+        font-family: map-get(com.$Fuentes,"Titulos");
+        
+    }
+    .producto{
+        display: flex;
+        width: 80%;
+        margin-top: 10px;
+        display: grid;
+        grid-template-areas: "card-img-top card-body";
+        grid-template-columns: 35% 60%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px 0px map-get(com.$Colores,"Sombras");
+        .card-img-top{
+            max-width: 200px;
+            grid-area: card-img-top;
+            border-right: 1px solid map-get(com.$Colores,"GrisClaro");
+            padding-right: 10px;
+            justify-content: flex-start;
+        }
+        .card-body{
+            grid-area: card-body;
+            display: block;
+            
+        }
+        .card-title{
+            margin: 2px;
+            
+
+        }
+        .card-text{
+            margin: 0px;
+        }
+        .cantidad{
+            border-radius: 10px;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+            border: 1px solid map-get(com.$Colores,"GrisClaro");
+            height: 40px;
+            width: 80px;
+            text-align: center;
+
+        }
+        .preciosFinales{
+            display: block;
+            text-align: end;
+        }
+    }
+    
+
+}
+.contenedor_carrito{
+    display: grid;
+    grid-template-areas: ". . carrito . .";
+}
+
 .contenedor_login{
     display: grid;
     grid-template-areas: ". . login login . .";
@@ -200,7 +269,7 @@ footer {
         color: (map-get(com.$Colores,"GrisClaro"));
     }
     
-    .dropbtn, #botonLogueo {
+    .dropbtn, #botonLogueo, #botonRegistro {
         background-color: (map-get(com.$Colores,"RojoClaroBotones"));
         color: (map-get(com.$Colores,"Blanco"));
         padding: 16px;
@@ -211,7 +280,7 @@ footer {
         letter-spacing: 2px;
     }
     
-    #botonLogueo{
+    #botonLogueo, #botonRegistro{
         background-color: map-get(com.$Colores, "Negro");
         width: 60%;
         margin-left: auto;
@@ -412,4 +481,28 @@ body {
 
 #titulo-pub{
     font-family: map-get(com.$Fuentes,"Titulos");
+}
+
+#error{
+    font-family: map-get(com.$Fuentes,"Informacion");
+    color: (map-get(com.$Colores,"Rojo"));
+    margin-bottom: 5px;
+    
+}
+
+.formularioRegistro > hr{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formularioRegistro{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#contrasenaInputForm, #nombreInputForm, #ciudadInputForm, #direccionInputForm{
+    display: flex;
+    flex-direction: row;
+    gap: 5px
 }

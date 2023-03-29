@@ -20,44 +20,4 @@ function slideImage(){
 window.addEventListener('resize', slideImage);
 //
 
-//Función Menú de Logueo
-
-let cuentas = [{
-    correo: 'matias.juarez@gmail.com',
-    contrasena: '1234'
-},
-{
-    correo: 'martha.estevanez@gmail.com',
-    contrasena: 'abecede'
-},
-{
-    correo: 'monicagiraudo23@gmail.com',
-    contrasena: 'moras23'
-},
-{
-    correo: 'admin',
-    contrasena: 'admin'
-}
-];
-
-function loguearse(){
-    correo = document.getElementById('correoInput').value;
-    contrasena = document.getElementById('contrasenaInput').value;
-    for(let i = 0; i < cuentas.length; i++){
-        if(correo == cuentas[i].correo){
-
-            if(contrasena == cuentas[i].contrasena){
-                alert('Bienvenido!');
-                break;
-            }
-            else{
-                alert('Contraseña incorrecta');
-                break;
-            }
-        }
-        if(i == cuentas.length - 1){
-            alert('Usuario no encontrado');
-        }
-    }
-}
 
