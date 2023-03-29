@@ -27,7 +27,7 @@ let error = document.getElementById("error");
 const erroresLogueo = [];
 erroresLogueo.push("Usuario y/o Contraseña incorrecta", "Ingrese una cuenta", "Ingrese la contraseña", "Aún no hay cuentas registradas");
 
-//Error 1: Las contraseñas no coinciden //
+//Error 1: Las contraseñas no coinciden 
 //Error 2: Hay uno o más campos vacíos //
 //Error 3: El correo ingresado ya se encuentra registrado
 //Error 4: El correo ingresado no es válido //
