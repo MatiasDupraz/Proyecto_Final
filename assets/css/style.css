@@ -715,6 +715,7 @@
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
+  min-height: 100px;
 }
 .carrito h1 {
   font-family: "Oswald", sans-serif;
@@ -774,7 +775,7 @@
 }
 
 #confirmarCompra {
-  width: 80%;
+  width: 40vw;
   border-radius: 10px;
   margin: 20px;
 }

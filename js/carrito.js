@@ -46,5 +46,11 @@ function mostrarCarrito(){
 
 }
 
+let confirmarCompra = document.getElementById("confirmarCompra");
 
-
+confirmarCompra.addEventListener("click", () =>{
+    alertify.success("Compra exitosa!");
+    carrito = "";
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            mostrarCarrito();
+}) 
