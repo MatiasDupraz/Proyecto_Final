@@ -1,0 +1,133 @@
+[
+    {
+        "titulo": "Auriculares Gamer Redragon Zeus Cableados",
+        "modelo": "Zeus",
+        "categoria": "Auriculares",
+        "precio": 5800,
+        "marca": "Redragon",
+        "descripcion": "Modelo: Zeus\n    Marca: Redragon\n    Tipo: Auriculares con micrófono\n    Conectividad: Cable con conector USB\n    Sonido: Sistema de sonido envolvente 7.1\n    Altavoces: 2 altavoces de neodimio de 50mm\n    Respuesta de frecuencia: 20Hz - 20kHz\n    Impedancia: 32 ohmios\n    Sensibilidad: 100dB +/- 3dB\n    Micrófono: Ajustable y desmontable con cancelación de ruido\n    Sensibilidad del micrófono: -42dB +/- 3dB\n    Longitud del cable: 2.0 metros\n    Compatibilidad: PC y dispositivos móviles\n    Material: Almohadillas suaves de cuero sintético y diadema ajustable de acero inoxidable\n    Color: Negro con detalles en rojo\n    Peso: 360 gramos\n    Garantía: 1 año\n    Los auriculares Zeus Redragon están diseñados para brindar una calidad de sonido superior y una experiencia de juego cómoda y duradera. Con su micrófono ajustable y desmontable con cancelación de ruido, los auriculares son ideales para las comunicaciones en línea. Además, su construcción duradera y materiales de alta calidad garantizan que los auriculares soporten el uso intensivo y prolongado. Con su sistema de sonido envolvente 7.1 y altavoces de neodimio de 50mm, los auriculares Zeus Redragon son una excelente opción para los jugadores que buscan una experiencia de audio inmersiva y de alta calidad.",
+        "stock": 430,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "Cableados",
+            "Gamer",
+            "Con microfono"
+        ],
+        "imagenes": [
+            "assets/img/productos/Auriculares/0-0.webp",
+            "assets/img/productos/Auriculares/0-1.webp",
+            "assets/img/productos/Auriculares/0-2.webp"
+        ],
+        "id": 0
+    },
+    {
+        "titulo": "Pendrive Sandisk Luxe Type-C & 3.0 256Gb Metálico",
+        "modelo": "Luxe",
+        "categoria": "Almacenamiento externo",
+        "precio": 2500,
+        "marca": "Sandisk",
+        "descripcion": "Marca: SanDisk\n    Modelo: Ultra Dual Drive Luxe\n    Capacidad de almacenamiento: 256GB\n    Velocidad de transferencia: hasta 150MB/s\n    Conectores: USB Type-C y USB Type-A\n    Compatibilidad: dispositivos con conector USB Type-C y USB Type-A\n    Sistema operativo compatible: Windows, Mac OS, Android\n    Carcasa: metálica resistente a golpes y arañazos\n    Dimensiones: 44.44mm x 12.19mm x 7.49mm\n    Peso: 5.2g\n    El pendrive USB SanDisk Ultra Dual Drive Luxe 256GB Type-C es una excelente opción para aquellos que necesitan un dispositivo de almacenamiento de gran capacidad y alta velocidad, compatible con múltiples dispositivos y sistemas operativos. Su carcasa metálica resistente lo hace ideal para llevar a todas partes, y su diseño elegante lo convierte en un accesorio atractivo para cualquier dispositivo. Con una velocidad de transferencia de hasta 150MB/s, este pendrive permite transferir y almacenar archivos grandes y múltiples con rapidez y facilidad.",
+        "stock": 573,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "Pendrive",
+            "256gb",
+            "Usb C",
+            "3.0"
+        ],
+        "imagenes": [
+            "assets/img/productos/Almacenamiento externo/1-0.webp",
+            "assets/img/productos/Almacenamiento externo/1-1.webp",
+            "assets/img/productos/Almacenamiento externo/1-2.webp"
+        ],
+        "id": 1
+    },
+    {
+        "titulo": "Silla Gamer Corsair T3 Rush Grey",
+        "modelo": "T3 Rush Grey",
+        "categoria": "Sillas",
+        "precio": 65000,
+        "marca": "Corsair",
+        "descripcion": "Marca: Corsair\n    Modelo: T3 Rush Grey\n    Material de la estructura: Acero\n    Material del relleno: Espuma viscoelástica\n    Material de la cubierta: Tela\n    Color: Gris\n    Peso máximo soportado: 120 kg\n    Respaldo reclinable: Sí\n    Reposabrazos ajustables: Sí\n    Elevación de gas: Sí\n    Ruedas: 5 ruedas de nylon resistentes\n    Peso neto: 20,8 kg\n    Dimensiones del producto: 580mm x 580mm x 940mm - 1050mm\n    La Silla Gamer Corsair T3 Rush Grey es una silla cómoda y resistente diseñada para brindar soporte durante largas sesiones de juego. Su diseño ergonómico, junto con su material de relleno y la cubierta de tela transpirable, garantizan una gran comodidad. Además, su estructura de acero, su capacidad de soporte y sus ruedas de nylon resistentes la hacen una silla resistente y duradera.",
+        "stock": 254,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "Reclinable",
+            "Reposabrazos",
+            "Ruedas",
+            "Gamer"
+        ],
+        "imagenes": [
+            "assets/img/productos/Sillas/2-0.webp",
+            "assets/img/productos/Sillas/2-1.webp",
+            "assets/img/productos/Sillas/2-2.webp"
+        ],
+        "id": 2
+    },
+    {
+        "titulo": "Placa de Video Gigabyte Aorus Nvidia Geforce RTX 3080 Ti",
+        "modelo": "3080 Ti Gigabyte Aorus 10Gb",
+        "categoria": "Placas de video",
+        "precio": 89500,
+        "marca": "Gigabyte",
+        "descripcion": "Marca: Gigabyte\n    Modelo: Aorus Master\n    Procesador gráfico: NVIDIA GeForce RTX 3080\n    Núcleos CUDA: 8704\n    Memoria de video: 10GB GDDR6X\n    Bus de memoria: 320-bit\n    Velocidad del reloj de la memoria: 19000 MHz\n    Velocidad del reloj del núcleo: 1905 MHz (Boost)\n    Resolución máxima: 7680x4320\n    Interfaz de video: 3x DisplayPort 1.4a, 2x HDMI 2.1\n    Refrigeración: 3 ventiladores de alta eficiencia\n    Consumo de energía: 370W\n    Conectores de alimentación: 2x PCIe 8-pin\n    Dimensiones: 320mm x 140mm x 64mm\n    La Placa de Video 10GB RTX 3080 Gigabyte Aorus Master es una tarjeta gráfica de alta gama diseñada para ofrecer un rendimiento excepcional en juegos y aplicaciones de alto rendimiento. Con su procesador gráfico NVIDIA GeForce RTX 3080, memoria de video GDDR6X de 10GB y núcleos CUDA, esta tarjeta gráfica proporciona imágenes y gráficos increíblemente realistas. Además, su refrigeración eficiente y diseño atractivo la hacen adecuada para cualquier sistema de juego personalizado.",
+        "stock": 329,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "Nvidia",
+            "10Gb",
+            "GDDR6"
+        ],
+        "imagenes": [
+            "assets/img/productos/Placas de video/3-0.webp",
+            "assets/img/productos/Placas de video/3-1.webp",
+            "assets/img/productos/Placas de video/3-2.webp"
+        ],
+        "id": 3
+    },
+    {
+        "titulo": "Router inalámbrico, Acces Point, Extensor de Rango Tp-Link TL-Wr820N",
+        "modelo": "TL-Wr820N",
+        "categoria": "Redes y conectividad",
+        "precio": 4800,
+        "marca": "Tp-Link",
+        "descripcion": "Marca: TP-Link\n    Modelo: TL-WR820N\n    Tipo de red: Router\n    Velocidad máxima: 300Mbps\n    Protocolos de red: IEEE 802.11n, IEEE 802.11g, IEEE 802.11b, IEEE 802.3, IEEE 802.3u\n    Puertos LAN: 4 puertos Ethernet 10/100Mbps\n    Puerto WAN: 1 puerto Ethernet 10/100Mbps\n    Antenas: 2 antenas externas de 5dBi\n    Frecuencia: 2.4GHz\n    Modos de operación: Router, repetidor universal, punto de acceso, WISP\n    Seguridad: WEP, WPA/WPA2, WPA-PSK/WPA2-PSK\n    Dimensiones: 7.2 x 5.0 x 1.4 pulgadas (182 x 128 x 35 mm)\n    El Router TP-Link TL-WR820N es una excelente opción para hogares pequeños y oficinas en casa que necesitan una red rápida y confiable. Con su velocidad de hasta 300Mbps, puertos LAN y WAN, y antenas externas, proporciona una buena cobertura de señal y conectividad inalámbrica y por cable. Además, su fácil instalación y configuración lo hacen una opción conveniente y accesible.",
+        "stock": 49,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "Router",
+            "2.4Ghz",
+            "300Mbps",
+            "2-antenas"
+        ],
+        "imagenes": [
+            "assets/img/productos/Redes y conectividad/4-0.webp",
+            "assets/img/productos/Redes y conectividad/4-1.webp",
+            "assets/img/productos/Redes y conectividad/4-2.webp"
+        ],
+        "id": 4
+    },
+    {
+        "titulo": "Mini Pc NUC Intel Core I3 10110U",
+        "modelo": "NUC I3 10110U",
+        "categoria": "Mini computadoras",
+        "precio": 65000,
+        "marca": "Intel",
+        "descripcion": "Marca: Intel\n    Modelo: NUC i3 10110U\n    Procesador: Intel Core i3 10110U de décima generación\n    Memoria RAM: Admite hasta 64 GB de memoria RAM DDR4\n    Almacenamiento: Unidad SSD de 256 GB preinstalada\n    Conectividad: Wi-Fi 6 y Bluetooth 5.0 integrados\n    Puertos: HDMI, DisplayPort, USB-C, USB 3.1, ranura para tarjeta SDXC\n    Sistema operativo: Windows 10 Home o Pro preinstalado\n    Dimensiones: 117 x 112 x 35 mm\n    El Mini PC Intel NUC i3 10110U es una excelente opción para aquellos que necesitan un PC de escritorio compacto y potente. Con su procesador Intel Core i3 10110U de décima generación, memoria RAM DDR4 de hasta 64 GB y una unidad SSD de 256 GB preinstalada, este mini PC ofrece un rendimiento sólido y una gran cantidad de almacenamiento. Además, su conectividad inalámbrica rápida y confiable, así como sus numerosos puertos, lo hacen una opción conveniente y versátil.",
+        "stock": 17,
+        "cantImagenes": 3,
+        "subcategorias": [
+            "I3",
+            "Gen-10",
+            "Intel",
+            "DDR4",
+            ""
+        ],
+        "imagenes": [
+            "assets/img/productos/Mini computadoras/5-0.webp",
+            "assets/img/productos/Mini computadoras/5-1.webp",
+            "assets/img/productos/Mini computadoras/5-2.webp"
+        ],
+        "id": 5
+    }
+]

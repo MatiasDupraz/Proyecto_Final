@@ -77,7 +77,21 @@
 }
 .contenedor_carrito{
     display: grid;
-    grid-template-areas: ". . carrito . .";
+    grid-template-areas: 
+    ". . carrito . ."
+    ". . compra . . ";
+}
+.compra{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: compra;
+}
+
+#confirmarCompra{
+    width: 80%;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .contenedor_login{
@@ -269,7 +283,7 @@ footer {
         color: (map-get(com.$Colores,"GrisClaro"));
     }
     
-    .dropbtn, #botonLogueo, #botonRegistro {
+    .dropbtn, #botonLogueo, #botonRegistro, #confirmarCompra {
         background-color: (map-get(com.$Colores,"RojoClaroBotones"));
         color: (map-get(com.$Colores,"Blanco"));
         padding: 16px;

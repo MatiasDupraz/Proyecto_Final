@@ -63,7 +63,8 @@ function loguearse(){
                     else{
                         //Contraseña válida
                         error.style.display = 'none';
-                        alert(`Bienvenido ${cuenta.nombre}!`)
+                        alertify.success(`Bienvenido ${cuenta.nombre}!`)
+                        
                     }
                 }
                 if(encontrado === false){
@@ -99,7 +100,7 @@ function registrarse(){
         document.getElementById('ciudadInput').value = '';
         document.getElementById('paisInput').value = '';
         document.getElementById('telefonoInput').value = '';
-        alert('Cuenta registrada');
+        alertify.success('Cuenta registrada');
         //Redirecciona a la página principal
         location.replace('../index.html');
     }
